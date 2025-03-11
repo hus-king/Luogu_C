@@ -4,6 +4,7 @@
 using namespace std;
 int num[10]={0};
 int number[3]={0};
+
 int flag[10]={0};
 void calculate(){
     num[1]=number[1]/100;
