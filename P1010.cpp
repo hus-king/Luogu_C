@@ -28,6 +28,7 @@ string calculate(int n){
 }
 int find(int n){
     int temp = 1;
+    
     int out = 0;
     while(temp *2 <= n){
         temp*=2;
