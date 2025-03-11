@@ -18,6 +18,7 @@ int main(){
         cout<<output[i];
     }
     return 0;
+    
 }
 void calculate(int n){
     number.push_back({1});
