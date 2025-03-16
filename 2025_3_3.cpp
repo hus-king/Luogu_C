@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 int check(string s);
 int play(string s, int key);
