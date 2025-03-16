@@ -17,9 +17,6 @@ int main(){
             if(result[j] > 5) result[j] -= 10;
             if(result[j] < -4) result[j] += 10;
         }
-        // for(int i = 0; i < 4; i++){
-        //     cout <<"result["<<i<<"]"<<result[i]<<endl;
-        // }
         int step = 0;
         while(result[0] != 0 || result[1] != 0 || result[2] != 0 || result[3] != 0){
             int length[4]={1,1,1,1};
@@ -44,12 +41,6 @@ int main(){
                     else break;
                 }
             }
-            // cout << "length" << endl;
-            // cout << length[0] << length[1] << length[2] << length[3] << endl;
-            // cout << "start" << endl;
-            // cout << start[0] << start[1] << start[2] << start[3] << endl;
-            // cout << "end" << endl;
-            // cout << end[0] << end[1] << end[2] << end[3] << endl;
             int max = 0;
             int maxindex = 0;
             for(int i = 0; i < 4; i++){
@@ -69,7 +60,6 @@ int main(){
                 }
             }
             add = result[minindex];
-            // cout << add << endl;
             step += abs(add);
             for(int i = start[maxindex]; i <= end[maxindex]; i++){
                 result[i] -= add;
@@ -78,10 +68,6 @@ int main(){
                 if(result[i] > 5) result[i] -= 10;
                 if(result[i] < -4) result[i] += 10;
             }
-            // for(int i = 0; i < 4; i++){
-            //     cout <<"result["<<i<<"]"<<result[i]<<endl;
-            // }
-            // cout << endl;
         }
         cout << step << endl;
     }
