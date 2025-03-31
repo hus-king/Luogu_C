@@ -4,6 +4,7 @@ using ll=long long;
 ll n, a[100005], d[270000], b[270000]; 
 // n:数组长度 a:原数组 d:线段树数组 b:懒标记数组
 
+//build:建树 update:更新 getsum:查询
 void build(ll l,ll r,ll p){  // l:区间左端点 r:区间右端点 p:节点标号
     if(l==r){
         d[p]=a[l];
